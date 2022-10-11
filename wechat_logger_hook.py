@@ -40,7 +40,7 @@ class WechatLoggerHook(LoggerHook):
                  reset_flag: bool = False,
                  commit: bool = True,
                  by_epoch: bool = True,
-                 allowed_subkeys = ['NDS', 'mAP'], # remove some keys based on subkeys.
+                 allowed_subkeys = ['NDS', 'mAP'], # keep only few keys.
                  miao_code='xxxx'): # get your own miao code from https://www.showdoc.com.cn/miaotixing/9175237605891603
         
         super().__init__(interval, ignore_last, reset_flag, by_epoch)
