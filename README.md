@@ -8,7 +8,7 @@
 log_config = dict(
      interval=10,
      hooks=[
-         dict(type='WechatLoggerHook'), # use this hook in your log_config
+         dict(type='WechatLoggerHook', miao_code='xxx'), # use this hook in your log_config. Pleast use your own code.
          dict(type='TextLoggerHook'),
          dict(type='TensorboardLoggerHook')
      ])
